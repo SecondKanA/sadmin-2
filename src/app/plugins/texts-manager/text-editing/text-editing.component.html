@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <select
+    (change)="selectText($event.target.value)"
+    name="name"
+  >
+    <option
+     *ngFor="let meta of textsMeta"
+     [value]="meta.name"
+    >{{ meta.title }}</option>
+  </select>
+  <input name="title" [(ngModel)]="title">
+  <textarea name="content" [(ngModel)]="content"></textarea>
+  <button (click)="submit()">Изменить</button>
+</div>

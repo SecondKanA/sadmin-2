@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <form class="form-login">
+    <p>
+      My password is: <input type="password" name="password" #inputpwd autofocus>
+    </p>
+    <p class="submitHint">(Press [Enter] to say)</p>
+    <input type="submit" hidden (click)="submit($event, inputpwd)">
+  </form>
+</div>

@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > * {
+  width: 100%;
+  margin: 10px 0;
+}
+
+select,
+input,
+textarea {
+  padding: 5px 10px;
+}
+
+textarea {
+  min-height: 50vh;
+}
+
+button {
+  padding: 10px 20px;
+  background: #8B2525;
+  border: 1px solid red;
+  color: #ccc;
+  cursor: pointer;
+}

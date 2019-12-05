@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="top">
+    <div class="preview-upload">
+      <img [src]="data.preview_url || 'https://via.placeholder.com/470x330'"
+        #previewbox class="preview-box">
+      <button (click)="input.click()" class="preview-input">Загрузить превью</button>
+      <input type="file" #input (change)="preview(input)" class="hidden">
+    </div>
+    <textarea
+      type="text" name="title"
+      class="title-input"
+      placeholder="Название"
+      [(ngModel)]="data.title">
+    </textarea>
+  </div>
+  <div class="editor-wrapper">
+    <quill-editor
+      [(ngModel)]="data.text"
+      placeholder="Редактор поста"
+    ></quill-editor>
+  </div>
+  <button (click)="submit()">Отправить</button>
+</div>

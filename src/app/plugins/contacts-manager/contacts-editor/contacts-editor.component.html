@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <form action="#">
+    <h2>Главные</h2>
+    <input type="text" name="copyright" placeholder="Копирайт" [(ngModel)]="data.copyright" required>
+    <input type="text" name="address" placeholder="Адресс" [(ngModel)]="data.address" required>
+    <input type="text" name="tel" placeholder="Телефон номер" [(ngModel)]="data.tel" required>
+    <input type="text" name="gmail" placeholder="Gmail" [(ngModel)]="data.gmail" required>
+
+    <h2>Социальные сети</h2>
+    <input type="text" name="telegram" placeholder="Telegram" [(ngModel)]="data.telegram">
+    <input type="text" name="instagram" placeholder="Instagram" [(ngModel)]="data.instagram">
+
+    <hr>
+    <button
+      (click)="submit()"
+      type="submit">Отправить изменения</button>
+  </form>
+</div>

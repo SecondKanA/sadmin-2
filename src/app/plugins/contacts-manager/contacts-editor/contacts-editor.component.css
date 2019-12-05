@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 0 50px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 3px 5px;
+  height: 2em;
+  margin: 3px 0;
+}

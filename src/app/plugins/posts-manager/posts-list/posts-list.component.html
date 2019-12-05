@@ -1,0 +1,15 @@
+<a
+  [routerLink]="[ 'new' ]"
+  class="create-post-link"
+>Создать новый пост</a>
+<ul class="posts-list">
+  <li *ngFor="let post of posts; index as i" class="post-li">
+    <div class  ="post-box">
+      <div class="post-name">{{ post.title }}</div>
+      <a [routerLink]="['edit', post.id]" class="btn-post edit-post">E</a>
+      <button (click)="delete(post.id, i)" class="btn-post delete-post">D</button>
+    </div>
+  </li>
+</ul>
+
+<p class="empty-note" *ngIf="posts.length === 0">Нет ни одного поста :(</p>

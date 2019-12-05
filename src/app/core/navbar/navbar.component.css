@@ -1,0 +1,11 @@
+.navbar {
+  background: #B1ADAD;
+  height: 100%;
+  padding: 30px 5px 5px;
+}
+
+.navbar-item {
+  border-bottom: 2px solid #000;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
